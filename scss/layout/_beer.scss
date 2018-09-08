@@ -12,13 +12,13 @@ svg {
   grid: auto-flow / 2em repeat(5, 1fr) 2em;
   max-width: 1200px;
   margin: 3em auto;
+  position: relative;
 
   &::before,
   &::after {
     content: '';
     display: block;
     position: absolute;
-    background: rgba(red, .8);
     top: 0;
     bottom: 0;
     left: 0;
@@ -27,9 +27,12 @@ svg {
 
   &::before{
     grid-column: 2 / 4;
+    background: linear-gradient(to right, rgba(white, .9), rgba(white, .5));
+
   }
 
   &::after {
     grid-column: -2 / -4;
+    background: linear-gradient(to left, rgba(white, .9), rgba(white, .5));
   }
 }
