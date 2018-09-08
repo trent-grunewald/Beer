@@ -36,6 +36,11 @@ h1, h2, h3, p, figure {
           box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .section {
   display: -ms-grid;
   display: grid;
@@ -48,6 +53,10 @@ h1, h2, h3, p, figure {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
+}
+
+.section--card {
+  grid: repeat(5, 1fr)/minmax(1em, 1fr) repeat(6, 1fr) minmax(1em, 1fr);
 }
 
 nav {
@@ -213,5 +222,53 @@ svg {
   grid-column: -2 / -4;
   background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.5)));
   background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
+}
+
+.card {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  padding: 2em;
+  outline: 2px solid currentColor;
+  outline-offset: 1em;
+  -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+}
+
+.card--dark {
+  background: #414a4d;
+  color: #a3b9bf;
+}
+
+.card--dark .section__title {
+  color: white;
+}
+
+.card--start {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2 / span 5;
+}
+
+.card--end {
+  grid-column: -2 / span 4;
+}
+
+.card__image {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/5;
+}
+
+.card__image--start {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / span 3;
+}
+
+.card__image--end {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-column: 5 / span 3;
 }
 /*# sourceMappingURL=main.css.map */
