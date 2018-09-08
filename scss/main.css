@@ -137,6 +137,11 @@ svg {
   position: relative;
 }
 
+.grid-carousel__item {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
 .grid-carousel__item:nth-last-of-type(1) {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -161,6 +166,19 @@ svg {
           order: 4;
 }
 
+.grid-carousel__item.featured {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.grid-carousel__caption {
+  opacity: 0;
+}
+
+.grid-carousel__item.featured .grid-carousel__caption {
+  opacity: 1;
+}
+
 .grid-carousel::before, .grid-carousel::after {
   content: '';
   display: block;
@@ -169,6 +187,7 @@ svg {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 
 .grid-carousel__button {
