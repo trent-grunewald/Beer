@@ -1,6 +1,6 @@
 @mixin applyOrder($number) {
-  @for $i from 1 through $number {
-    &:nth-of-type(#{$i}) {
+  @for $i from 1 to $number {
+    &:nth-last-of-type(#{$i}) {
       order: #{$i};
     }
   }
