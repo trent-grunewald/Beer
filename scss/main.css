@@ -56,7 +56,7 @@ img {
 }
 
 .section--card {
-  grid: repeat(5, 1fr)/minmax(1em, 1fr) repeat(6, 1fr) minmax(1em, 1fr);
+  grid: repeat(5, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
 }
 
 nav {
@@ -230,7 +230,7 @@ svg {
   grid-row: 1/4;
   padding: 2em;
   outline: 2px solid currentColor;
-  outline-offset: 1em;
+  outline-offset: -1em;
   -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
 }
@@ -251,7 +251,9 @@ svg {
 }
 
 .card--end {
-  grid-column: -2 / span 4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 4;
+  grid-column: 4 / span 4;
 }
 
 .card__image {
@@ -270,5 +272,39 @@ svg {
   -ms-grid-column: 5;
   -ms-grid-column-span: 3;
   grid-column: 5 / span 3;
+}
+
+.btn {
+  display: inline-block;
+  font-family: "Permanent Marker", cursive;
+  text-transform: uppercase;
+  padding: .25em 2em;
+  text-decoration: none;
+  margin: .5em 0 0;
+  border-radius: .4em;
+}
+
+.btn--light {
+  background: #d3cdc1;
+  color: #414a4d;
+}
+
+.btn--light:hover {
+  background: #89807a;
+}
+
+.btn--dark {
+  background: #a3b9bf;
+  color: #5a666a;
+}
+
+.btn--dark:hover {
+  background: white;
+  color: #a3b9bf;
+}
+
+.btn--outline {
+  border: 2px solid currentColor;
+  color: #414a4d;
 }
 /*# sourceMappingURL=main.css.map */
