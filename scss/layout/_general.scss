@@ -17,7 +17,13 @@ img {
   p {
     grid-column: 2 / 3;
   }
+
+  &__text{
+    width: 50%;
+  }
 }
+
+
 
 .section--card {
   grid: repeat(5, 1fr) / minmax(1em, 1fr) repeat(5, 1fr) minmax(1em,1fr); 

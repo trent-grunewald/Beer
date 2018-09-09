@@ -59,6 +59,10 @@ img {
   grid-column: 2 / 3;
 }
 
+.section__text {
+  width: 50%;
+}
+
 .section--card {
   grid: repeat(5, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
 }
@@ -148,11 +152,15 @@ svg {
   max-width: 1200px;
   margin: 3em auto;
   position: relative;
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
 }
 
 .grid-carousel__item {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
+  -ms-scroll-snap-coordinate: 0 0;
+      scroll-snap-coordinate: 0 0;
 }
 
 .grid-carousel__item:nth-last-of-type(1) {

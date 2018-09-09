@@ -13,10 +13,12 @@ svg {
   max-width: 1200px;
   margin: 3em auto;
   position: relative;
-
+  scroll-snap-type: mandatory;
+  
   &__item {
     @include applyOrder(5);
     transform: scale(.8);
+    scroll-snap-coordinate: 0 0;
 
     &.featured {
       transform: scale(1);
@@ -29,6 +31,7 @@ svg {
 
   &__item.featured  &__caption {
     opacity: 1;
+   
   }
 
   &::before,
