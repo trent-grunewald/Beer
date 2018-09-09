@@ -249,6 +249,23 @@ svg {
       align-self: center;
 }
 
+footer {
+  text-align: center;
+  color: #a3b9bf;
+  padding-bottom: 5em;
+}
+
+footer p {
+  font-family: "Lobster", cursive;
+  line-height: 1;
+  margin: 0;
+}
+
+footer .logo--light {
+  margin-bottom: .5em;
+  color: #d3cdc1;
+}
+
 .card {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;

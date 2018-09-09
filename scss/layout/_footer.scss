@@ -1,0 +1,17 @@
+footer {
+  text-align: center;
+  color: $light-blue;
+  padding-bottom: 5em;
+
+  p{
+    font-family: $ff-title;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .logo--light{
+    margin-bottom: .5em;
+    color: $light-brown;
+  }
+}
+
