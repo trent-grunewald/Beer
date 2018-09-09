@@ -49,7 +49,7 @@ img {
   display: -ms-grid;
   display: grid;
   grid: auto-flow/minmax(1em, 1fr) minmax(300px, 650px) minmax(1em, 1fr);
-  padding: 5em 0;
+  padding: 5em 0 0;
 }
 
 .section__title, .section__subtitle,
@@ -226,6 +226,27 @@ svg {
   grid-column: -2 / -4;
   background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.5)));
   background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
+}
+
+.section--about {
+  grid: auto-flow/minmax(300px, 2fr) minmax(300px, 650px) 1fr;
+  grid-gap: 2em;
+}
+
+.section--about__image {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  margin-left: auto;
+}
+
+.section--about__text-box {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .card {
