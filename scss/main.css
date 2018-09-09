@@ -11,6 +11,10 @@ h1, h2, h3, p, figure {
   margin: 0;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 .section__title {
   font-family: "Lobster", cursive;
   line-height: 1;
