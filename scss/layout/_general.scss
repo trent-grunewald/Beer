@@ -5,6 +5,7 @@
 img {
   max-width: 100%;
   height: auto;
+  outline: 2px solid $light-blue;
 }
 
 .section {
@@ -19,7 +20,7 @@ img {
   }
 
   &__text{
-    width: 50%;
+    width: 65%;
   }
 }
 
