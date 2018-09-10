@@ -1,0 +1,58 @@
+.card {
+  grid-row: 1/4;
+  padding: 2em;
+  outline: 2px solid currentColor;
+  outline-offset: -1em;
+  box-shadow: 0 0 .5em rgba(black, .5);
+
+  &--dark {
+    background: $dark-blue;
+    color: $light-blue;
+
+    .section__title {
+      color: white;
+    }
+  }
+
+  &--start {
+    grid-column: 2 / span 3;
+  }
+
+  &--end {
+    grid-column: 4 / span 4;
+  }
+
+  
+}
+
+.tap--img{
+  grid-column: 4/span 3;
+  grid-row: 2/5;
+  outline: 2px solid $light-blue;
+}
+
+.tours--image {
+  grid-column: 4/ span 3;
+  grid-row: 2/5;
+  z-index: 10;
+  outline: 2px solid #a3b9bf;
+}
+
+.about--img {
+  grid-column: 2/ span 3;
+  grid-row: 1/ 4;
+  outline: 2px solid $dark-blue;
+}
+
+.text--about {
+  grid-column: 4 / span 3;
+  grid-row: 2/2;
+  z-index: 10;
+  background: $dark-brown;
+  color: $light-brown;
+}
+
+.section--about {
+  grid: repeat(2, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
+}
+
