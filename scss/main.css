@@ -43,7 +43,6 @@ p {
 img {
   max-width: 100%;
   height: auto;
-  outline: 2px solid #a3b9bf;
 }
 
 .section {
@@ -65,7 +64,7 @@ img {
 }
 
 .section--card {
-  grid: repeat(5, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
+  grid: repeat(4, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
 }
 
 nav {
@@ -305,22 +304,50 @@ footer .logo--light {
   grid-column: 4 / span 4;
 }
 
-.card__image {
+.tap--img {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4/span 3;
   -ms-grid-row: 2;
   -ms-grid-row-span: 3;
   grid-row: 2/5;
+  outline: 2px solid #a3b9bf;
 }
 
-.card__image--start {
+.tours--image {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4/ span 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/5;
+  z-index: 10;
+  outline: 2px solid #a3b9bf;
+}
+
+.about--img {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
-  grid-column: 2 / span 3;
+  grid-column: 2/ span 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/ 4;
+  outline: 2px solid #414a4d;
 }
 
-.card__image--end {
+.text--about {
   -ms-grid-column: 4;
   -ms-grid-column-span: 3;
   grid-column: 4 / span 3;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+  z-index: 10;
+  background: #89807a;
+  color: #d3cdc1;
+}
+
+.section--about {
+  grid: repeat(2, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
 }
 
 .btn {
