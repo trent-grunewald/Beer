@@ -311,6 +311,7 @@ footer .logo--light {
   -ms-grid-row-span: 3;
   grid-row: 2/5;
   outline: 2px solid #a3b9bf;
+  margin-bottom: 2em;
 }
 
 .tours--image {

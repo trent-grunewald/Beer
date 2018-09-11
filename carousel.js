@@ -52,9 +52,9 @@ const moveLeft =_=> {
 
 //Event Listeners
 rightButton.addEventListener('click', _ => {
-  moveRight();
+  moveLeft();
 })
 
 leftButton.addEventListener('click', _ => {
-  moveLeft();
+  moveRight();
 })
