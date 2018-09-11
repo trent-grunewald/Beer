@@ -234,7 +234,7 @@ svg {
 }
 
 .section--about {
-  grid: auto-flow/minmax(300px, 2fr) minmax(300px, 650px) 1fr;
+  grid: repeat(4, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
   grid-gap: 2em;
 }
 
@@ -311,7 +311,6 @@ footer .logo--light {
   -ms-grid-row-span: 3;
   grid-row: 2/5;
   outline: 2px solid #a3b9bf;
-  margin-bottom: 2em;
 }
 
 .tours--image {

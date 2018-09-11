@@ -1,5 +1,5 @@
 .section--about {
-  grid: auto-flow / minmax(300px, 2fr) minmax(300px, 650px) 1fr;
+  grid: repeat(4, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
   grid-gap: 2em;
 
   &__image {
@@ -11,4 +11,5 @@
     grid-column: 2/3;
     align-self: center;
   }
+  
 }
