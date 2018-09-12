@@ -14,7 +14,7 @@
     <ul>
       <li><a href="#ourbeer">Our Beer</a></li>
       <li><a href="#ontap">On Tap</a></li>
-      <li><a href="#aboutus">About Us</a></li>
+      <li><a href="#about">About Us</a></li>
       <li><a href="#tours">Tours</a></li>
     </ul>
   </nav>
@@ -26,10 +26,10 @@
   </section>
 
   <section class="section section--beer">
-  <h2 class="section__title">Our Beer</h2>
+  <h2 class="section__title" id="ourbeer">Our Beer</h2>
   <p class="section__subtitle">Current offerings</p>
   <p>The company's best known brand is Stupid Bastard Ale, which has been described as a "watershed beer" that "put Castle Rock on the craft brew map."</p>
-  <div class="grid-carousel">
+  <div class="grid-carousel" >
     <button class="grid-carousel__button js-left">
         <svg id="left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 31">
           <title>left-arrow</title>
@@ -59,7 +59,7 @@
       <!-- end carousel 2 -->
 
     <!-- carousel item 3 -->
-    <figure class="grid-carousel__item">
+    <figure class="grid-carousel__item  featured">
       <img src="/Beer/images/beer3.jpg" alt="" class="grid-carousel__image">
         <figcaption class="grid-carousel__caption">
           <h3 class="grid-carousel__title">IPA</h3>
@@ -70,7 +70,7 @@
       <!-- end carousel 3 -->
 
     <!-- carousel item 4 -->
-    <figure class="grid-carousel__item featured">
+    <figure class="grid-carousel__item">
       <img src="/Beer/images/beer4.jpg" alt="" class="grid-carousel__image">
         <figcaption class="grid-carousel__caption">
           <h3 class="grid-carousel__title">Porter</h3>
@@ -101,7 +101,7 @@
     <!-- end beer section -->
 
 
-    <section class="section section--card section--taproom">
+    <section class="section section--card section--taproom" id="ontap">
       <div class="card card--start card--dark back">
         <h2 class="section__title">Whats on Tap!?</h2>
         <p class="section__subtitle">Our current tap handles</p>
@@ -115,7 +115,8 @@
     </section>
     
 
-    <section class="section section--card section--about">   <div class="card card--start back text--about">
+    <section class="section section--card section--about" id="about">   
+      <div class="card card--start back text--about">
         <h2 class="section__title">About us</h2>
         <p class="section__subtitle">We are people too</p>
         <p>This is a true "About us" as people, not our brewery... So come on in and get to know who you're buying from, we like familiar faces.</p>
@@ -125,7 +126,7 @@
     </section>
 
 
-    <section class="section section--card section--tours">
+    <section class="section section--card section--tours" id="tours">
         <img src="/Beer/images/tour.jpg" alt="A picture of our brewery" class="tours--image">
       <div class="card card--start card--light">
         <h2 class="section__title">Our Brewery</h2>
