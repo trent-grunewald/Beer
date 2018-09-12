@@ -22,6 +22,20 @@ img {
   &__text{
     width: 65%;
   }
+
+
+
+  &__hours{
+    margin-top: 1em;
+    color: $light-brown;
+    font-size: 1em;
+    font-family: $ff-sub-title;
+    margin-bottom: 0;
+  }
+  &__days{
+    color: white;
+    margin: 0;
+  }
 }
 
 

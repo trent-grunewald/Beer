@@ -63,6 +63,19 @@ img {
   width: 65%;
 }
 
+.section__hours {
+  margin-top: 1em;
+  color: #d3cdc1;
+  font-size: 1em;
+  font-family: "Permanent Marker", cursive;
+  margin-bottom: 0;
+}
+
+.section__days {
+  color: white;
+  margin: 0;
+}
+
 .section--card {
   grid: repeat(4, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
 }
