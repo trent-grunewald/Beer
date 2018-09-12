@@ -76,6 +76,23 @@ img {
   margin: 0;
 }
 
+.section__about {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(/Beer/images/abouthead.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/Beer/images/abouthead.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50vh 0;
+  text-align: center;
+  color: #aea79e;
+}
+
+.section__about .logo {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
 .section--card {
   grid: repeat(4, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
 }
@@ -273,6 +290,71 @@ svg {
       align-self: center;
 }
 
+.about {
+  font-family: "Lobster", cursive;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  font-size: 4rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px black;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%;
+  /* IE10 */
+  -webkit-box-flex: 25%;
+          flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    -webkit-box-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    -webkit-box-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.img--text {
+  color: red;
+}
+
 footer {
   text-align: center;
   color: #a3b9bf;
@@ -286,8 +368,7 @@ footer p {
 }
 
 footer .logo--light {
-  margin-bottom: .5em;
-  color: #d3cdc1;
+  width: 12%;
 }
 
 .card {

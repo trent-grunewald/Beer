@@ -23,8 +23,6 @@ img {
     width: 65%;
   }
 
-
-
   &__hours{
     margin-top: 1em;
     color: $light-brown;
@@ -32,12 +30,28 @@ img {
     font-family: $ff-sub-title;
     margin-bottom: 0;
   }
+
   &__days{
     color: white;
     margin: 0;
   }
-}
 
+  &__about{
+    background: {
+    image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url(/Beer/images/abouthead.jpg);
+    size: cover;
+    position:center;
+    repeat: no-repeat;
+  }
+  padding: 50vh 0;
+  text-align: center;
+  color: $brown;
+
+  .logo {
+    grid-column: 2 / 3;
+  }
+}
+}
 
 
 .section--card {
