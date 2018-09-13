@@ -269,6 +269,10 @@ svg {
   background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
 }
 
+body {
+  background: #aea79e;
+}
+
 .section--about {
   grid: repeat(4, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
   grid-gap: 2em;
@@ -331,6 +335,40 @@ svg {
   vertical-align: middle;
 }
 
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: rgba(174, 167, 158, 0.53);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  font-family: "Permanent Marker", cursive;
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -338,6 +376,18 @@ svg {
     -webkit-box-flex: 50%;
             flex: 50%;
     max-width: 50%;
+  }
+  .text {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1860px) {
+  .text {
+    font-size: 1em;
+  }
+  .about {
+    font-size: 3rem;
   }
 }
 
@@ -349,16 +399,14 @@ svg {
             flex: 100%;
     max-width: 100%;
   }
-}
-
-.img--text {
-  color: red;
+  .text {
+    font-size: 1em;
+  }
 }
 
 footer {
   text-align: center;
-  color: #a3b9bf;
-  padding-bottom: 5em;
+  color: #414a4d;
 }
 
 footer p {
