@@ -381,6 +381,15 @@ body {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1860px) {
+  .text {
+    font-size: 1em;
+  }
+  .about {
+    font-size: 3rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .column {
     -ms-flex: 50%;
@@ -391,14 +400,8 @@ body {
   .text {
     font-size: 1em;
   }
-}
-
-@media screen and (max-width: 1860px) {
-  .text {
-    font-size: 1em;
-  }
   .about {
-    font-size: 3rem;
+    font-size: 2em;
   }
 }
 
@@ -411,6 +414,9 @@ body {
     max-width: 100%;
   }
   .text {
+    font-size: 1em;
+  }
+  .about {
     font-size: 1em;
   }
 }
