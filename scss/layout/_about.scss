@@ -85,6 +85,18 @@ body{
   text-align: center;
 }
 
+.section--moto{
+  width: 50%;
+  margin: 2em auto;
+
+  .moto{
+    background: $dark-brown;
+    color: whitesmoke;
+    font-family: $ff-sub-title;
+    }
+  }
+
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {

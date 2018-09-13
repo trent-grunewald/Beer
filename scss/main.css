@@ -369,6 +369,17 @@ body {
   text-align: center;
 }
 
+.section--moto {
+  width: 50%;
+  margin: 2em auto;
+}
+
+.section--moto .moto {
+  background: #89807a;
+  color: whitesmoke;
+  font-family: "Permanent Marker", cursive;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
