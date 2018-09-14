@@ -269,10 +269,6 @@ svg {
   background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
 }
 
-body {
-  background: #aea79e;
-}
-
 .section--about {
   grid: repeat(4, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
   grid-gap: 2em;

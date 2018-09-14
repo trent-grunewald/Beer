@@ -1,6 +1,4 @@
-body{
-  background: $brown;
-}
+
 .section--about {
   grid: repeat(4, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
   grid-gap: 2em;
