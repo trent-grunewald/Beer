@@ -63,18 +63,3 @@ svg {
     background: linear-gradient(to left, rgba(white, .9), rgba(white, .5));
   }
 }
-
-.section--ontap{
-  background: {
-  image: url(https://94c1199342e139bbfd45-496b9566d2e7caf560667baedeaabce1.ssl.cf1.rackcdn.com/draft-pour.jpg);
-  size: cover;
-  repeat: no-repeat;
-}
-padding: 25vh 0;
-text-align: center;
-color: $brown;
-
-.logo {
-  grid-column: 2 / 3;
-}
-}

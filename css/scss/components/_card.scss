@@ -28,20 +28,20 @@
 .tap--img{
   grid-column: 4/span 3;
   grid-row: 2/5;
-  border: 2px solid $light-blue;
+  outline: 2px solid $light-blue;
 }
 
 .tours--image {
   grid-column: 4/ span 3;
   grid-row: 2/5;
   z-index: 10;
-  border: 2px solid #a3b9bf;
+  outline: 2px solid #a3b9bf;
 }
 
 .about--img {
   grid-column: 2/ span 3;
   grid-row: 1/ 4;
-  border: 2px solid $dark-blue;
+  outline: 2px solid $dark-blue;
 }
 
 .text--about {
@@ -55,31 +55,4 @@
 .section--about {
   grid: repeat(2, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
 }
-
-.card--request{
-  grid-column: 2 / span 5;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-
-  &__text{
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  input[type=text],[type=number], select {
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 2px solid $light-blue;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input [type=select], select {
-  width: 60%;
-}
-}
-
 

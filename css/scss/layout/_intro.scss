@@ -1,0 +1,32 @@
+.section--intro {
+  background: {
+    image: url(/Beer/images/base.jpg);
+    size: cover;
+    repeat: no-repeat;
+  }
+  padding: 10vh 0;
+  text-align: center;
+  color: $brown;
+
+  .logo {
+    grid-column: 2 / 3;
+  }
+}
+
+.intro__text {
+  grid-column: 2/3;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: white;
+    opacity: .3;
+    width: 100px;
+    position: absolute;
+    top: -1em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

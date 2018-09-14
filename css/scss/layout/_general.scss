@@ -5,6 +5,7 @@
 img {
   max-width: 100%;
   height: auto;
+  
 }
 
 .section {
@@ -57,8 +58,3 @@ img {
   grid: repeat(4, 1fr) / minmax(1em, 1fr) repeat(5, 1fr) minmax(1em,1fr); 
 }
 
-.dt{
-  font-weight: 600;
-  color: $dark-blue;
-  margin-top: -1em;
-}

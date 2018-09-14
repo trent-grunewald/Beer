@@ -1,3 +1,4 @@
+
 .section--about {
   grid: repeat(4, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
   grid-gap: 2em;
@@ -85,8 +86,12 @@
 .section--moto{
   width: 50%;
   margin: 2em auto;
-  font-family: $ff-sub-title;
-  color: $dark-blue;
+
+  .moto{
+    background: $dark-brown;
+    color: whitesmoke;
+    font-family: $ff-body;
+    }
   }
 
 
@@ -102,7 +107,20 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
+  .section--moto .moto {
+    font-family: $ff-body;
+    line-height: 1.25;
+    font-weight: 200;
+    font-size: .75em;
+}
+
+  p{
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 885px) {
   .column {
       -ms-flex: 50%;
       flex: 50%;
@@ -114,7 +132,7 @@
   }
 
   .about{
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 

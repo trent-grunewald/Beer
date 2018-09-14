@@ -12,11 +12,10 @@
   <!-- nav -->
   <nav>
     <ul>
-      <li><a href="#ourbeer">On Tap</a></li>
-      <li><a href="#beer">Beer</a></li>
+      <li><a href="#ourbeer">Our Beer</a></li>
+      <li><a href="#ontap">On Tap</a></li>
       <li><a href="#about">About Us</a></li>
       <li><a href="#tours">Tours</a></li>
-      <li><a href="#request">Request a tap</a></li>
     </ul>
   </nav>
   <!-- end nav -->
@@ -27,12 +26,9 @@
   </section>
 
   <section class="section section--beer">
-  <h2 class="section__title" id="ourbeer">On Tap!</h2>
+  <h2 class="section__title" id="ourbeer">Our Beer</h2>
   <p class="section__subtitle">Current offerings</p>
-  <p>Last updated:</p>
-  <p class="dt"></p>
-  <p>This is a list of what is currently on tap in our  lounge, please let us know below if we have a favorite that you would like to be next in line!</p>
-  
+  <p>The company's best known brand is Stupid Bastard Ale, which has been described as a "watershed beer" that "put Castle Rock on the craft brew map."</p>
   <div class="grid-carousel" >
     <button class="grid-carousel__button js-left">
         <svg id="left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 31">
@@ -42,15 +38,13 @@
     </button>
     <!-- carousel item 1 -->
     <figure class="grid-carousel__item">
-      <div class="grid-carousel__image">
-      <img src="/Beer/images/beer1.jpg" alt="">
-      </div>
+      <img src="/Beer/images/beer1.jpg" alt="" class="grid-carousel__image">
         <figcaption class="grid-carousel__caption">
           <h3 class="grid-carousel__title">Strong Ale</h3>
           <p class="grid-carousel__subtitle">9.2%</p><span>ABV</span>
           <p class="grid-carousel__description">A hoplicious Strong Ale.</p>
         </figcaption>
-    </figure>
+      </figure>
       <!-- end carousel 1 -->
 
     <!-- carousel item 2 -->
@@ -107,15 +101,15 @@
     <!-- end beer section -->
 
 
-    <section class="section section--card section--taproom" id="beer">
+    <section class="section section--card section--taproom" id="ontap">
       <div class="card card--start card--dark back">
-        <h2 class="section__title">Our Beer</h2>
-        <p class="section__subtitle">Our current beers</p>
+        <h2 class="section__title">Whats on Tap!?</h2>
+        <p class="section__subtitle">Our current tap handles</p>
         <div class="section__text">
-          <p>This list does not include our seasonals, so please check back each season to make sure you stay caught up, or join the mailing list to be informed of what is coming!</p>
+          <p>This is updated three times a day, morning, noon and night... If the beer you are after isn't on tap or in the "Upcoming list" check back again soon, and call to get it in line!</p>
         </div>
-        <a href="beer.html" class="btn btn--dark">Our Beers</a>
-        <p class="section__hours">Business Hours</p>
+        <a href="" class="btn btn--dark">View Taps</a>
+        <p class="section__hours">Hours</p>
         <span>Mon-Fri:<span class="section__days"> 12PM - 12AM</span></span>
         <p>Sat-Sun:<span class="section__days"> 10AM - 2AM</span></p>
       </div>
@@ -146,33 +140,11 @@
       </div>
     </section>
 
-    <section class="section section--card section--request" id="request">
-      <div class="card card--start card--dark card--request">
-        <h2 class="section__title">Want something on tap?</h2>
-        <p class="section__subtitle">Let us know below</p>
-        <div class="card--request__text">
-        <input type="text" id="name" placeholder="Name">
-        <input type="text" id="email" placeholder="email">
-        <input type="number" id="phone" placeholder="phone-number">
-        <select id="beeroptions" placeholder="select beer">
-            <option value="ipa">IPA</option>
-            <option value="porter">Porter</option>
-            <option value="wtf">WTF</option>
-            <option value="strongale">Strong Ale</option>
-            <option value="red">Red</option>
-          </select>
-          <br><a href="" class="btn btn--light">Submit!</a><br>
-        <input type="checkbox">Contact me when my beer request is next.
-      </div>
-      </div>
-    </section>
-
     <footer>
       <img src="/Beer/images/logo2.png" class="logo--light">
       <p>Copyright 2018</p>
       <p>Trent Grunewald</p>
     </footer>
     <script src="/Beer/carousel.js"></script>
-    <script src="/Beer/date.js"></script>
 </body>
 </html>
