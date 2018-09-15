@@ -318,8 +318,8 @@ svg {
   height: 100%;
   width: 100%;
   opacity: 0;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   background-color: rgba(174, 167, 158, 0.53);
 }
 
@@ -328,7 +328,37 @@ svg {
 }
 
 #stepchild:hover {
-  background: url(/Beer/images/beer3.jpg);
+  text-align: center;
+  background: url(/Beer/images/beer3.jpg) no-repeat center center;
+  background-color: white;
+  border: 7px solid #414a4d;
+}
+
+.beer--hover {
+  position: absolute;
+  bottom: 15px;
+  color: #a3b9bf;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: .5em;
+}
+
+.beer--hover__button {
+  background: #414a4d;
+  color: #a3b9bf;
+  font-family: "Permanent Marker", cursive;
+  text-transform: uppercase;
+  padding: .25em 2em;
+  text-decoration: none;
+  border-radius: .4em;
+  font-size: .75em;
+  border: 2px solid #a3b9bf;
+  margin-top: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 .section--about {
