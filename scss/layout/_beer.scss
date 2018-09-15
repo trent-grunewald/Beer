@@ -25,11 +25,21 @@ svg {
 
   &__caption {
     opacity: 0;
+    margin-top: 2em;
   }
 
   &__item.featured  &__caption {
     opacity: 1;
     scroll-snap-type: proximity;
+    background: #a3b9bf;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: white;
+    margin-top: 2em;
+  }
+
+  &__title{
+    font-size: 3rem;
   }
 
   &::before,
@@ -61,6 +71,11 @@ svg {
   &::after {
     grid-column: -2 / -4;
     background: linear-gradient(to left, rgba(white, .9), rgba(white, .5));
+  }
+
+  .abv{
+    font-family: $ff-sub-title;
+    color:$dark-blue;
   }
 }
 

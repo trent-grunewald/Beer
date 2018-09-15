@@ -231,12 +231,22 @@ svg {
 
 .grid-carousel__caption {
   opacity: 0;
+  margin-top: 2em;
 }
 
 .grid-carousel__item.featured .grid-carousel__caption {
   opacity: 1;
   -ms-scroll-snap-type: proximity;
       scroll-snap-type: proximity;
+  background: #a3b9bf;
+  border-radius: 5px;
+  border: 2px solid black;
+  color: white;
+  margin-top: 2em;
+}
+
+.grid-carousel__title {
+  font-size: 3rem;
 }
 
 .grid-carousel::before, .grid-carousel::after {
@@ -273,6 +283,11 @@ svg {
   grid-column: -2 / -4;
   background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.5)));
   background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
+}
+
+.grid-carousel .abv {
+  font-family: "Permanent Marker", cursive;
+  color: #414a4d;
 }
 
 .section--ontap {
