@@ -65,7 +65,7 @@
   background-color: rgba(174, 167, 158, 0.53);
 }
 
-.about--container:hover, img:hover {
+.container:hover, img:hover{
   opacity: 1;
   -ms-transform: scale(1.1,1.1); /* IE 9 */
   -webkit-transform: scale(1.1,1.1); /* Safari */
@@ -75,16 +75,9 @@
   -webkit-box-shadow: 10px 10px 91px 0px rgba(174, 167, 158, 0.53);
 -moz-box-shadow: 10px 10px 91px 0px rgba(174, 167, 158, 0.53);
 box-shadow: 10px 10px 91px 0px rgba(174, 167, 158, 0.53);
-        z-index:9999;
-        border-right:1px solid transparent;
-        border-bottom:1px solid transparent;
-        cursor:pointer;
-        background-color:#fff;
-
-  .overlay{
-    opacity: 1;
-    position: absolute;
-  }
+  .overlay:hover {
+  opacity: 1;
+   }
 }
 
 

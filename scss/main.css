@@ -503,7 +503,7 @@ svg {
   background-color: rgba(174, 167, 158, 0.53);
 }
 
-.about--container:hover, img:hover {
+.container:hover, img:hover {
   opacity: 1;
   /* IE 9 */
   -webkit-transform: scale(1.1, 1.1);
@@ -514,16 +514,10 @@ svg {
   transition: all .5s;
   -webkit-box-shadow: 10px 10px 91px 0px rgba(174, 167, 158, 0.53);
   box-shadow: 10px 10px 91px 0px rgba(174, 167, 158, 0.53);
-  z-index: 9999;
-  border-right: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  cursor: pointer;
-  background-color: #fff;
 }
 
-.about--container:hover .overlay, img:hover .overlay {
+.container:hover .overlay:hover, img:hover .overlay:hover {
   opacity: 1;
-  position: absolute;
 }
 
 .text {
