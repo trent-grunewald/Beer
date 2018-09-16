@@ -85,6 +85,7 @@ svg {
   size: cover;
   repeat: no-repeat;
 }
+background-color: $light-brown;
 padding: 25vh 0;
 text-align: center;
 color: $brown;
@@ -201,6 +202,6 @@ color: $brown;
 }
 }
 
-body{
-  background: red;
+#beer{
+  background: $dark-brown;
 }

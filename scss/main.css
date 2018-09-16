@@ -300,6 +300,7 @@ svg {
   background-image: url(https://94c1199342e139bbfd45-496b9566d2e7caf560667baedeaabce1.ssl.cf1.rackcdn.com/draft-pour.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #d3cdc1;
   padding: 25vh 0;
   text-align: center;
   color: #aea79e;
@@ -418,8 +419,8 @@ svg {
   width: 40%;
 }
 
-body {
-  background: red;
+#beer {
+  background: #89807a;
 }
 
 .section--about {
