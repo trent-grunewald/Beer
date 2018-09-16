@@ -425,7 +425,7 @@ svg {
 
 .section--about {
   grid: repeat(4, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
-  grid-gap: 2em;
+  grid-gap: 4em;
 }
 
 .section--about__image {
@@ -498,13 +498,32 @@ svg {
   height: 100%;
   width: 100%;
   opacity: 0;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: all .5s;
+  transition: all .5s;
   background-color: rgba(174, 167, 158, 0.53);
 }
 
-.container:hover .overlay {
+.about--container:hover, img:hover {
   opacity: 1;
+  /* IE 9 */
+  -webkit-transform: scale(1.1, 1.1);
+  /* Safari */
+  transform: scale(1.1, 1.1);
+  z-index: 1;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-box-shadow: 10px 10px 91px 0px rgba(174, 167, 158, 0.53);
+  box-shadow: 10px 10px 91px 0px rgba(174, 167, 158, 0.53);
+  z-index: 9999;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.about--container:hover .overlay, img:hover .overlay {
+  opacity: 1;
+  position: absolute;
 }
 
 .text {
