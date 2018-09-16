@@ -418,6 +418,10 @@ svg {
   width: 40%;
 }
 
+body {
+  background: red;
+}
+
 .section--about {
   grid: repeat(4, 1fr)/minmax(1em, 1fr) repeat(5, 1fr) minmax(1em, 1fr);
   grid-gap: 2em;
