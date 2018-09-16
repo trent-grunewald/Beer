@@ -115,19 +115,70 @@ color: $brown;
   opacity: 1;
 }
 
+.beerSmall{
+    font-size: 2rem;
+    color: #414a4d;
+}
+
 #stepchild:hover {
+  text-align: center;
+  background: url(/Beer/images/beer2.jpg) no-repeat center center;
+  background-color: white;
+  border: 7px solid #414a4d;
+}
+
+#wtf:hover {
+  text-align: center;
+  background: url(/Beer/images/beer5.jpg) no-repeat center center;
+  background-color: white;
+  border: 7px solid #414a4d;
+  background-size: 30%;
+}
+
+#average:hover {
   text-align: center;
   background: url(/Beer/images/beer3.jpg) no-repeat center center;
   background-color: white;
   border: 7px solid #414a4d;
-  
+  background-size: 30%;
 }
+
+#toughguy:hover {
+  text-align: center;
+  background: url(/Beer/images/beer1.jpg) no-repeat center center;
+  background-color: white;
+  border: 7px solid #414a4d;
+  background-size: 30%;
+}
+
+#gravedigger:hover, #takemeaway:hover {
+  text-align: center;
+  background: url(/Beer/images/beer4.jpg) no-repeat center center;
+  background-color: white;
+  border: 7px solid #414a4d;
+  background-size: 30%;
+}
+
+#nakedgoose:hover {
+  text-align: center;
+  background: url(/Beer/images/beer3.jpg) no-repeat center center;
+  background-color: white;
+  border: 7px solid #414a4d;
+}
+
+#grandchild:hover {
+  text-align: center;
+  background: url(/Beer/images/beer2.jpg) no-repeat center center;
+  background-color: white;
+  border: 7px solid #414a4d;
+  background-size: 30%;
+}
+
 
 .beer--hover{
   position: absolute;
     bottom: 15px;
     color: #a3b9bf;
-    font-style: italic;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: .5em;

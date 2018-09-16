@@ -25,6 +25,12 @@ p {
 .section__title{
   font-size: 4.75rem;
   color: $dark-blue;
+
+  &__small{
+    font-family: $ff-title;
+    font-size: 2rem;
+    color: #414a4d;
+  }
 }
 
 .section__subtitle{
